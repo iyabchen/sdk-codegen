@@ -53,7 +53,7 @@ data class AccessToken (
 /**
  * @property applied_dashboard_filters Filters coming from the dashboard that are applied. Example `[{ "filter_title": "Name", "field_name": "distribution_centers.name", "filter_value": "Los Angeles CA" }]`
  * @property comparison_type This property informs the check what kind of comparison we are performing. Only certain condition types are valid for time series alerts. For details, refer to [Setting Alert Conditions](https://docs.looker.com/sharing-and-publishing/creating-alerts#setting_alert_conditions) Valid values are: "EQUAL_TO", "GREATER_THAN", "GREATER_THAN_OR_EQUAL_TO", "LESS_THAN", "LESS_THAN_OR_EQUAL_TO", "INCREASES_BY", "DECREASES_BY", "CHANGES_BY".
- * @property cron Vixie-Style crontab specification when to run. At minumum, it has to be longer than 15 minute intervals
+ * @property cron Vixie-Style crontab specification when to run. At minimum, it has to be longer than 15 minute intervals
  * @property custom_title An optional, user-defined title for the alert
  * @property dashboard_element_id ID of the dashboard element associated with the alert. Refer to [dashboard_element()](#!/Dashboard/DashboardElement)
  * @property description An optional description for the alert. This supplements the title
@@ -1770,7 +1770,7 @@ enum class DestinationType : Serializable {
  * @property persistent_table_indexes PDT index columns (read-only)
  * @property persistent_table_sortkeys PDT sortkey columns (read-only)
  * @property persistent_table_distkey PDT distkey column (read-only)
- * @property supports_streaming Suports streaming results (read-only)
+ * @property supports_streaming Supports streaming results (read-only)
  * @property automatically_run_sql_runner_snippets Should SQL Runner snippets automatically be run (read-only)
  * @property connection_tests Array of names of the tests that can be run on a connection using this dialect (read-only)
  * @property supports_inducer Is supported with the inducer (i.e. generate from sql) (read-only)
@@ -2430,8 +2430,8 @@ data class IntegrationParam (
 
 /**
  * @property tag Matches a field that has this tag. (read-only)
- * @property any_tag If present, supercedes 'tag' and matches a field that has any of the provided tags. (read-only)
- * @property all_tags If present, supercedes 'tag' and matches a field that has all of the provided tags. (read-only)
+ * @property any_tag If present, supersedes 'tag' and matches a field that has any of the provided tags. (read-only)
+ * @property all_tags If present, supersedes 'tag' and matches a field that has all of the provided tags. (read-only)
  */
 data class IntegrationRequiredField (
     var tag: String? = null,
@@ -5325,7 +5325,7 @@ data class Workspace (
  *
  * @property applied_dashboard_filters Filters coming from the dashboard that are applied. Example `[{ "filter_title": "Name", "field_name": "distribution_centers.name", "filter_value": "Los Angeles CA" }]`
  * @property comparison_type This property informs the check what kind of comparison we are performing. Only certain condition types are valid for time series alerts. For details, refer to [Setting Alert Conditions](https://docs.looker.com/sharing-and-publishing/creating-alerts#setting_alert_conditions) Valid values are: "EQUAL_TO", "GREATER_THAN", "GREATER_THAN_OR_EQUAL_TO", "LESS_THAN", "LESS_THAN_OR_EQUAL_TO", "INCREASES_BY", "DECREASES_BY", "CHANGES_BY".
- * @property cron Vixie-Style crontab specification when to run. At minumum, it has to be longer than 15 minute intervals
+ * @property cron Vixie-Style crontab specification when to run. At minimum, it has to be longer than 15 minute intervals
  * @property custom_title An optional, user-defined title for the alert
  * @property dashboard_element_id ID of the dashboard element associated with the alert. Refer to [dashboard_element()](#!/Dashboard/DashboardElement)
  * @property description An optional description for the alert. This supplements the title

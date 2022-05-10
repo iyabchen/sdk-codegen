@@ -77,7 +77,7 @@ class Alert(model.Model):
     """
     Attributes:
         comparison_type: This property informs the check what kind of comparison we are performing. Only certain condition types are valid for time series alerts. For details, refer to [Setting Alert Conditions](https://docs.looker.com/sharing-and-publishing/creating-alerts#setting_alert_conditions) Valid values are: "EQUAL_TO", "GREATER_THAN", "GREATER_THAN_OR_EQUAL_TO", "LESS_THAN", "LESS_THAN_OR_EQUAL_TO", "INCREASES_BY", "DECREASES_BY", "CHANGES_BY".
-        cron: Vixie-Style crontab specification when to run. At minumum, it has to be longer than 15 minute intervals
+        cron: Vixie-Style crontab specification when to run. At minimum, it has to be longer than 15 minute intervals
         destinations: Array of destinations to send alerts to. Must be the same type of destination. Example `[{ "destination_type": "EMAIL", "email_address": "test@test.com" }]`
         field:
         owner_id: User id of alert owner
@@ -3721,7 +3721,7 @@ class Dialect(model.Model):
         persistent_table_indexes: PDT index columns
         persistent_table_sortkeys: PDT sortkey columns
         persistent_table_distkey: PDT distkey column
-        supports_streaming: Suports streaming results
+        supports_streaming: Supports streaming results
         automatically_run_sql_runner_snippets: Should SQL Runner snippets automatically be run
         connection_tests: Array of names of the tests that can be run on a connection using this dialect
         supports_inducer: Is supported with the inducer (i.e. generate from sql)
@@ -5110,8 +5110,8 @@ class IntegrationRequiredField(model.Model):
     """
     Attributes:
         tag: Matches a field that has this tag.
-        any_tag: If present, supercedes 'tag' and matches a field that has any of the provided tags.
-        all_tags: If present, supercedes 'tag' and matches a field that has all of the provided tags.
+        any_tag: If present, supersedes 'tag' and matches a field that has any of the provided tags.
+        all_tags: If present, supersedes 'tag' and matches a field that has all of the provided tags.
     """
 
     tag: Optional[str] = None
@@ -11140,7 +11140,7 @@ class WriteAlert(model.Model):
 
         Attributes:
             comparison_type: This property informs the check what kind of comparison we are performing. Only certain condition types are valid for time series alerts. For details, refer to [Setting Alert Conditions](https://docs.looker.com/sharing-and-publishing/creating-alerts#setting_alert_conditions) Valid values are: "EQUAL_TO", "GREATER_THAN", "GREATER_THAN_OR_EQUAL_TO", "LESS_THAN", "LESS_THAN_OR_EQUAL_TO", "INCREASES_BY", "DECREASES_BY", "CHANGES_BY".
-            cron: Vixie-Style crontab specification when to run. At minumum, it has to be longer than 15 minute intervals
+            cron: Vixie-Style crontab specification when to run. At minimum, it has to be longer than 15 minute intervals
             destinations: Array of destinations to send alerts to. Must be the same type of destination. Example `[{ "destination_type": "EMAIL", "email_address": "test@test.com" }]`
             field:
             owner_id: User id of alert owner

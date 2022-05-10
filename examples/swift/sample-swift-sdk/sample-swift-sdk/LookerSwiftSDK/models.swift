@@ -1842,7 +1842,7 @@ struct Dialect: SDKModel {
      */
     var persistent_table_distkey: String?
     /**
-     * Suports streaming results (read-only)
+     * Supports streaming results (read-only)
      */
     var supports_streaming: Bool?
     /**
@@ -2764,11 +2764,11 @@ struct IntegrationRequiredField: SDKModel {
      */
     var tag: String?
     /**
-     * If present, supercedes 'tag' and matches a field that has any of the provided tags. (read-only)
+     * If present, supersedes 'tag' and matches a field that has any of the provided tags. (read-only)
      */
     var any_tag: [String]?
     /**
-     * If present, supercedes 'tag' and matches a field that has all of the provided tags. (read-only)
+     * If present, supersedes 'tag' and matches a field that has all of the provided tags. (read-only)
      */
     var all_tags: [String]?
 }

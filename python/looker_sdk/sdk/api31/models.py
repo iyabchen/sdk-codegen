@@ -2858,7 +2858,7 @@ class Dialect(model.Model):
         persistent_table_indexes: PDT index columns
         persistent_table_sortkeys: PDT sortkey columns
         persistent_table_distkey: PDT distkey column
-        supports_streaming: Suports streaming results
+        supports_streaming: Supports streaming results
         automatically_run_sql_runner_snippets: Should SQL Runner snippets automatically be run
         connection_tests: Array of names of the tests that can be run on a connection using this dialect
         supports_inducer: Is supported with the inducer (i.e. generate from sql)
@@ -4094,8 +4094,8 @@ class IntegrationRequiredField(model.Model):
     """
     Attributes:
         tag: Matches a field that has this tag.
-        any_tag: If present, supercedes 'tag' and matches a field that has any of the provided tags.
-        all_tags: If present, supercedes 'tag' and matches a field that has all of the provided tags.
+        any_tag: If present, supersedes 'tag' and matches a field that has any of the provided tags.
+        all_tags: If present, supersedes 'tag' and matches a field that has all of the provided tags.
     """
 
     tag: Optional[str] = None

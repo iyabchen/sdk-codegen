@@ -1296,7 +1296,7 @@ public class Dialect : SdkModel
   public string? persistent_table_sortkeys { get; set; } = null;
   /// <summary>PDT distkey column (read-only)</summary>
   public string? persistent_table_distkey { get; set; } = null;
-  /// <summary>Suports streaming results (read-only)</summary>
+  /// <summary>Supports streaming results (read-only)</summary>
   public bool? supports_streaming { get; set; } = null;
   /// <summary>Should SQL Runner snippets automatically be run (read-only)</summary>
   public bool? automatically_run_sql_runner_snippets { get; set; } = null;
@@ -1853,9 +1853,9 @@ public class IntegrationRequiredField : SdkModel
 {
   /// <summary>Matches a field that has this tag. (read-only)</summary>
   public string? tag { get; set; } = null;
-  /// <summary>If present, supercedes 'tag' and matches a field that has any of the provided tags. (read-only)</summary>
+  /// <summary>If present, supersedes 'tag' and matches a field that has any of the provided tags. (read-only)</summary>
   public string[]? any_tag { get; set; } = null;
-  /// <summary>If present, supercedes 'tag' and matches a field that has all of the provided tags. (read-only)</summary>
+  /// <summary>If present, supersedes 'tag' and matches a field that has all of the provided tags. (read-only)</summary>
   public string[]? all_tags { get; set; } = null;
 }
 

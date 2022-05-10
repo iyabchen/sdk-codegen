@@ -125,7 +125,7 @@ public struct Alert: SDKModel {
 
     private var _cron: AnyString
     /**
-     * Vixie-Style crontab specification when to run. At minumum, it has to be longer than 15 minute intervals
+     * Vixie-Style crontab specification when to run. At minimum, it has to be longer than 15 minute intervals
      */
     public var cron: String {
         get { _cron.value }
@@ -7053,7 +7053,7 @@ public struct Dialect: SDKModel {
     }
 
     /**
-     * Suports streaming results (read-only)
+     * Supports streaming results (read-only)
      */
     public var supports_streaming: Bool?
 
@@ -9581,7 +9581,7 @@ public struct IntegrationRequiredField: SDKModel {
 
     private var _any_tag: [AnyString]?
     /**
-     * If present, supercedes 'tag' and matches a field that has any of the provided tags. (read-only)
+     * If present, supersedes 'tag' and matches a field that has any of the provided tags. (read-only)
      */
     public var any_tag: [String]? {
         get { if let v = _any_tag { return v.map { $0.value } } else { return nil } }
@@ -9590,7 +9590,7 @@ public struct IntegrationRequiredField: SDKModel {
 
     private var _all_tags: [AnyString]?
     /**
-     * If present, supercedes 'tag' and matches a field that has all of the provided tags. (read-only)
+     * If present, supersedes 'tag' and matches a field that has all of the provided tags. (read-only)
      */
     public var all_tags: [String]? {
         get { if let v = _all_tags { return v.map { $0.value } } else { return nil } }
@@ -20899,7 +20899,7 @@ public struct WriteAlert: SDKModel {
 
     private var _cron: AnyString
     /**
-     * Vixie-Style crontab specification when to run. At minumum, it has to be longer than 15 minute intervals
+     * Vixie-Style crontab specification when to run. At minimum, it has to be longer than 15 minute intervals
      */
     public var cron: String {
         get { _cron.value }

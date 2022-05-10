@@ -58,7 +58,7 @@ public class Alert : SdkModel
   /// <summary>This property informs the check what kind of comparison we are performing. Only certain condition types are valid for time series alerts. For details, refer to [Setting Alert Conditions](https://docs.looker.com/sharing-and-publishing/creating-alerts#setting_alert_conditions) Valid values are: "EQUAL_TO", "GREATER_THAN", "GREATER_THAN_OR_EQUAL_TO", "LESS_THAN", "LESS_THAN_OR_EQUAL_TO", "INCREASES_BY", "DECREASES_BY", "CHANGES_BY".</summary>
   [JsonConverter(typeof(StringEnumConverter))]
   public ComparisonType comparison_type { get; set; }
-  /// <summary>Vixie-Style crontab specification when to run. At minumum, it has to be longer than 15 minute intervals</summary>
+  /// <summary>Vixie-Style crontab specification when to run. At minimum, it has to be longer than 15 minute intervals</summary>
   public string cron { get; set; } = "";
   /// <summary>An optional, user-defined title for the alert</summary>
   public string? custom_title { get; set; } = null;
@@ -1683,7 +1683,7 @@ public class Dialect : SdkModel
   public string? persistent_table_sortkeys { get; set; } = null;
   /// <summary>PDT distkey column (read-only)</summary>
   public string? persistent_table_distkey { get; set; } = null;
-  /// <summary>Suports streaming results (read-only)</summary>
+  /// <summary>Supports streaming results (read-only)</summary>
   public bool? supports_streaming { get; set; } = null;
   /// <summary>Should SQL Runner snippets automatically be run (read-only)</summary>
   public bool? automatically_run_sql_runner_snippets { get; set; } = null;
@@ -2306,9 +2306,9 @@ public class IntegrationRequiredField : SdkModel
 {
   /// <summary>Matches a field that has this tag. (read-only)</summary>
   public string? tag { get; set; } = null;
-  /// <summary>If present, supercedes 'tag' and matches a field that has any of the provided tags. (read-only)</summary>
+  /// <summary>If present, supersedes 'tag' and matches a field that has any of the provided tags. (read-only)</summary>
   public string[]? any_tag { get; set; } = null;
-  /// <summary>If present, supercedes 'tag' and matches a field that has all of the provided tags. (read-only)</summary>
+  /// <summary>If present, supersedes 'tag' and matches a field that has all of the provided tags. (read-only)</summary>
   public string[]? all_tags { get; set; } = null;
 }
 
@@ -5105,7 +5105,7 @@ public class WriteAlert : SdkModel
   /// <summary>This property informs the check what kind of comparison we are performing. Only certain condition types are valid for time series alerts. For details, refer to [Setting Alert Conditions](https://docs.looker.com/sharing-and-publishing/creating-alerts#setting_alert_conditions) Valid values are: "EQUAL_TO", "GREATER_THAN", "GREATER_THAN_OR_EQUAL_TO", "LESS_THAN", "LESS_THAN_OR_EQUAL_TO", "INCREASES_BY", "DECREASES_BY", "CHANGES_BY".</summary>
   [JsonConverter(typeof(StringEnumConverter))]
   public ComparisonType comparison_type { get; set; }
-  /// <summary>Vixie-Style crontab specification when to run. At minumum, it has to be longer than 15 minute intervals</summary>
+  /// <summary>Vixie-Style crontab specification when to run. At minimum, it has to be longer than 15 minute intervals</summary>
   public string cron { get; set; } = "";
   /// <summary>An optional, user-defined title for the alert</summary>
   public string? custom_title { get; set; } = null;
